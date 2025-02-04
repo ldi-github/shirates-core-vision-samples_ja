@@ -1,0 +1,38 @@
+{
+  "[設定]": {
+    "packageOrBundleId": "com.android.settings",
+    "appIconName": "設定"
+  },
+  "[カレンター]": {
+    "packageOrBundleId": "com.google.android.calendar",
+    "appIconName": "Calendar"
+  },
+  "[電卓]": {
+    "packageOrBundleId": "com.google.android.calculator",
+    "appIconName": "Calculator"
+  },
+  "[Chrome]": {
+    "packageOrBundleId": "com.android.chrome",
+    "appIconName": "Chrome"
+  },
+  "[マップ]": {
+    "packageOrBundleId": "com.google.android.apps.maps",
+    "appIconName": "Maps"
+  },
+  "[Playストア]": {
+    "packageOrBundleId": "com.android.vending",
+    "appIconName": "Play ストア"
+  },
+  "[時計]": {
+    "packageOrBundleId": "com.google.android.deskclock",
+    "appIconName": "Clock"
+  },
+  "[ダウンロード]": {
+    "packageOrBundleId": "com.google.android.documentsui",
+    "appIconName": "Downloads"
+  },
+  "[App1]": {
+    "packageOrBundleId": "com.example.app1",
+    "appIconName": "App1"
+  }
+}

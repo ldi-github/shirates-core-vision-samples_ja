@@ -1,0 +1,19 @@
+{
+  "testConfigName": "testConfig@i",
+
+  "appIconName": "Settings",
+
+  "packageOrBundleId": "com.apple.Preferences",
+
+  "startupPackageOrBundleId": "com.apple.Preferences",
+
+  "dataset": {
+    "apps": "testConfig/ios/dataset/apps.json"
+  },
+
+  "capabilities": {
+    "language": "ja",
+    "locale": "JP"
+  }
+
+}
