@@ -5,7 +5,7 @@ plugins {
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
-val shiratesCoreVersion = "8.0.8"
+val shiratesCoreVersion = "8.0.9"
 val appiumClientVersion = "9.4.0"
 
 val userHome = System.getProperty("user.home")
