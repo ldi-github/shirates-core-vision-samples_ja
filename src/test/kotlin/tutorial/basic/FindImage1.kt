@@ -22,8 +22,8 @@ class FindImage1 : VisionTest() {
                         v2 = it.findImage("[ディスプレイアイコン]")
                     }
                 }.expectation {
-                    v1.isFound.thisIsTrue("[ネットワークとインターネットアイコン] is found.")
-                    v2.isFound.thisIsTrue("[ディスプレイアイコン] is found.")
+                    v1.isFound.thisIsTrue("[ネットワークとインターネットアイコン]が見つかりました。")
+                    v2.isFound.thisIsTrue("[ディスプレイアイコン]が見つかりました。")
                 }
             }
         }

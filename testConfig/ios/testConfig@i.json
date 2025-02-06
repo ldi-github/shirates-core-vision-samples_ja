@@ -1,7 +1,7 @@
 {
   "testConfigName": "testConfig@i",
 
-  "appIconName": "Settings",
+  "appIconName": "設定",
 
   "packageOrBundleId": "com.apple.Preferences",
 

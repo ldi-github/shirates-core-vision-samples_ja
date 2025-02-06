@@ -125,8 +125,8 @@ class AssertingAnyValue1 : VisionTest() {
             }
             case(2) {
                 expectation {
-                    it.isApp("Settings")
-                        .thisIsTrue("This app is <Settings>")
+                    it.isApp("設定")
+                        .thisIsTrue("This app is <設定>")
                     it.isApp("Chrome")
                         .thisIsFalse("This app is not <Chrome>")
                 }

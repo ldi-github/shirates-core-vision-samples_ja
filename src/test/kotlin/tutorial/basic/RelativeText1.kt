@@ -38,7 +38,7 @@ class RelativeText1 : VisionTest() {
                     v1 = detect("保存済み")
                 }.expectation {
                     v1.rightText().textIs("投稿")
-                    v1.leftText().textIs("スポット")
+                    v1.leftText().textIs("経路")
                 }
             }
         }

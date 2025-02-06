@@ -52,11 +52,11 @@ class LaunchApp1 : VisionTest() {
             }
             case(5) {
                 condition {
-                    it.terminateApp("[Play Store]")     // App Nickname in app.json
+                    it.terminateApp("[Playストア]")     // App Nickname in app.json
                 }.action {
-                    it.launchApp("[Play Store]")
+                    it.launchApp("[Playストア]")
                 }.expectation {
-                    it.appIs("[Play Store]")
+                    it.appIs("[Playストア]")
                 }
             }
         }

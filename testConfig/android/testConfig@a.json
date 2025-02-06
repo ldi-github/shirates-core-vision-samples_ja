@@ -1,7 +1,7 @@
 {
   "testConfigName": "testConfig@a",
 
-  "appIconName": "Settings",
+  "appIconName": "設定",
 
   "packageOrBundleId": "com.android.settings",
 

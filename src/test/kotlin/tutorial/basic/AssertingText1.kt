@@ -56,7 +56,7 @@ class AssertingText1 : VisionTest() {
                 }.action {
                     it.detect("ネットワークとインターネット")
                 }.expectation {
-                    it.textIs("接続設定画面")
+                    it.textIs("接続設定")
                 }
             }
         }
