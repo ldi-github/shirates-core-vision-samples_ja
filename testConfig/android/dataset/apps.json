@@ -5,11 +5,11 @@
   },
   "[カレンター]": {
     "packageOrBundleId": "com.google.android.calendar",
-    "appIconName": "Calendar"
+    "appIconName": "カレンター"
   },
   "[電卓]": {
     "packageOrBundleId": "com.google.android.calculator",
-    "appIconName": "Calculator"
+    "appIconName": "電卓"
   },
   "[Chrome]": {
     "packageOrBundleId": "com.android.chrome",
@@ -17,7 +17,7 @@
   },
   "[マップ]": {
     "packageOrBundleId": "com.google.android.apps.maps",
-    "appIconName": "Maps"
+    "appIconName": "マップ"
   },
   "[Playストア]": {
     "packageOrBundleId": "com.android.vending",
@@ -25,7 +25,7 @@
   },
   "[時計]": {
     "packageOrBundleId": "com.google.android.deskclock",
-    "appIconName": "Clock"
+    "appIconName": "時計"
   },
   "[ダウンロード]": {
     "packageOrBundleId": "com.google.android.documentsui",
