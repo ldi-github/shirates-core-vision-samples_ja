@@ -24,7 +24,7 @@ class ImageIs1 : VisionTest() {
             }
             case(2) {
                 expectation {
-                    v1.imageFullLabelIs("@a[Android設定アプリ][Android設定トップ画面][ネットワークとインターネットアイコン]")
+                    v1.imageFullLabelIs("@a_Android設定_Android設定トップ画面_[ネットワークとインターネットアイコン]")
                 }
             }
         }
