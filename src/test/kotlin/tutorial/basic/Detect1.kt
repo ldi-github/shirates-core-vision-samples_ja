@@ -40,4 +40,30 @@ class Detect1 : VisionTest() {
         }
     }
 
+    @Test
+    @Order(30)
+    fun detect_patterns() {
+
+        scenario {
+            case(1) {
+                action {
+                    it.detect("設定を検索")
+                    output(it)
+
+                    it.detect("*定を検*")
+                    output(it)
+
+                    it.detect("設定を*")
+                    output(it)
+
+                    it.detect("*を検索")
+                    output(it)
+
+                    it.detect("設定を*&&*を検索")
+                    output(it)
+                }
+            }
+        }
+    }
+
 }

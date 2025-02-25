@@ -3,6 +3,7 @@ package tutorial.basic
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 import shirates.core.driver.commandextension.thisIsTrue
+import shirates.core.driver.testContext
 import shirates.core.vision.driver.commandextension.*
 import shirates.core.vision.testcode.VisionTest
 
@@ -57,12 +58,14 @@ class FindImage1 : VisionTest() {
     @Order(30)
     fun findImageWithScrollRight_findImageWithScrollLeft() {
 
+        testContext.segmentMarginHorizontal = 5
+
         scenario {
             case(1) {
                 condition {
                     it.macro("[ファイルトップ画面]")
                 }.action {
-                    it.onLineOf("画像") {
+                    it.findImage("[画像ボタン]").onLine {
                         v1 = findImageWithScrollRight("[今週ボタン]")
                     }
                 }.expectation {
