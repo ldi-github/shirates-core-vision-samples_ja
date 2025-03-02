@@ -14,14 +14,14 @@ class TempSelector1 : VisionTest() {
     @Order(10)
     fun tempSelector1() {
 
-        tempSelector("[最初のアイテム]", "ネットワークとインターネット")
+        tempSelector("{最初のアイテム}", "ネットワークとインターネット")
 
         scenario {
             case(1) {
                 condition {
                     it.macro("[Android設定トップ画面]")
                 }.action {
-                    it.tap("[最初のアイテム]")
+                    it.tap("{最初のアイテム}")
                 }.expectation {
                     it.screenIs("[ネットワークとインターネット画面]")
                 }
