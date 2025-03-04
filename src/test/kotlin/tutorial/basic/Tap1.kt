@@ -44,4 +44,29 @@ class Tap1 : VisionTest() {
         }
     }
 
+    @Test
+    fun tapBelowOf() {
+
+        scenario {
+            case(1) {
+                action {
+                    it.tapBelowOf("モバイル、Wi-Fi、アクセスポイント")
+                }.expectation {
+                    it.screenIs("[接続設定画面]")
+                }
+            }
+            case(2) {
+                condition {
+                    it.pressBack()
+                }.action {
+                    withScrollDown {
+                        it.tapBelowOf("サービスと設定")
+                    }
+                }.expectation {
+                    it.screenIs("[システム画面]")
+                }
+            }
+        }
+    }
+
 }
