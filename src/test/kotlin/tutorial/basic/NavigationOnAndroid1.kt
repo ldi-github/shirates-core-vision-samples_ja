@@ -1,9 +1,8 @@
 package tutorial.basic
 
-import goPreviousApp
 import org.junit.jupiter.api.Test
-import shirates.core.driver.testDrive
 import shirates.core.vision.driver.commandextension.appIs
+import shirates.core.vision.driver.commandextension.goPreviousApp
 import shirates.core.vision.driver.commandextension.launchApp
 import shirates.core.vision.testcode.VisionTest
 
@@ -29,7 +28,7 @@ class NavigationOnAndroid1 : VisionTest() {
             }
             case(3) {
                 action {
-                    testDrive.goPreviousApp()
+                    it.goPreviousApp()
                 }.expectation {
                     it.appIs("[設定]")
                 }

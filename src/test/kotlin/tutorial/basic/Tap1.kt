@@ -45,12 +45,12 @@ class Tap1 : VisionTest() {
     }
 
     @Test
-    fun tapBelowOf() {
+    fun tapItemUnder() {
 
         scenario {
             case(1) {
                 action {
-                    it.tapBelowOf("モバイル、Wi-Fi、アクセスポイント")
+                    it.tapItemUnder("モバイル、Wi-Fi、アクセスポイント")
                 }.expectation {
                     it.screenIs("[接続設定画面]")
                 }
@@ -60,7 +60,7 @@ class Tap1 : VisionTest() {
                     it.pressBack()
                 }.action {
                     withScrollDown {
-                        it.tapBelowOf("サービスと設定")
+                        it.tapItemUnder("サービスと設定")
                     }
                 }.expectation {
                     it.screenIs("[システム画面]")
