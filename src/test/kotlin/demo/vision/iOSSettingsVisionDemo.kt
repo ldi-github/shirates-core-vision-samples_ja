@@ -57,7 +57,7 @@ class iOSSettingsVisionDemo : VisionTest() {
                     it.tap("情報")
                 }.expectation {
                     it.screenIs("[情報画面]")
-                        .detect("iOSバージョン").rightTextIs("18.2")
+                        .detect("iOSバージョン").rightTextIs("18.0")
                         .detect("機種名").rightTextIs("iPhone 16", message = "[機種名]は'iPhone 16'です")
                 }
             }
