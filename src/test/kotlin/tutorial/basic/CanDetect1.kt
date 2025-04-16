@@ -61,7 +61,7 @@ class CanDetect1 : VisionTest() {
                     it.macro("[Android設定トップ画面]")
                 }.expectation {
                     it.canDetect("ネットワークとインターネット")
-                        .thisIsTrue(message = "canSelect(\"ネットワークとインターネット\") is true")
+                        .thisIsTrue(message = "canDetect(\"ネットワークとインターネット\") is true")
                 }
             }
         }
@@ -77,7 +77,7 @@ class CanDetect1 : VisionTest() {
                     it.macro("[Android設定トップ画面]")
                 }.expectation {
                     it.canDetect("ネットワークビジネス")
-                        .thisIsFalse("canSelect(\"ネットワークビジネス\") is false")
+                        .thisIsFalse("canDetect(\"ネットワークビジネス\") is false")
                 }
             }
         }
@@ -93,7 +93,7 @@ class CanDetect1 : VisionTest() {
                     it.macro("[Android設定トップ画面]")
                 }.expectation {
                     it.canDetectWithScrollDown("システム")
-                        .thisIsTrue("canSelectWithScrollDown(\"システム\") is true")
+                        .thisIsTrue("canDetectWithScrollDown(\"システム\") is true")
                 }
             }
         }
@@ -109,7 +109,7 @@ class CanDetect1 : VisionTest() {
                     it.macro("[Android設定トップ画面]")
                 }.expectation {
                     it.canDetectWithScrollDown("ネットワークビジネス")
-                        .thisIsFalse("canSelectWithScrollDown(\"ネットワークビジネス\") is false")
+                        .thisIsFalse("canDetectWithScrollDown(\"ネットワークビジネス\") is false")
                 }
             }
         }
@@ -126,7 +126,7 @@ class CanDetect1 : VisionTest() {
                         .flickBottomToTop()
                 }.expectation {
                     it.canDetectWithScrollUp("ネットワークとインターネット")
-                        .thisIsTrue("canSelectWithScrollUp(\"Netowork & internet\") is true")
+                        .thisIsTrue("canDetectWithScrollUp(\"Netowork & internet\") is true")
                 }
             }
         }
@@ -143,7 +143,7 @@ class CanDetect1 : VisionTest() {
                         .flickBottomToTop()
                 }.expectation {
                     it.canDetectWithScrollUp("ネットワークビジネス")
-                        .thisIsFalse("canSelectWithScrollUp(\"ネットワークビジネス\") is false")
+                        .thisIsFalse("canDetectWithScrollUp(\"ネットワークビジネス\") is false")
                 }
             }
         }
