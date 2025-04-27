@@ -1,4 +1,4 @@
-# shirates-core-vision-samples_ja [Beta]
+# shirates-core-vision-samples_ja
 
 Shirates/Vision の日本語サンプルです。
 
