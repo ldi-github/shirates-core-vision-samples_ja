@@ -48,7 +48,7 @@ class TestFixtureEvent1 : VisionTest() {
 
     override fun setEventHandlers(context: TestDriverEventContext) {
 
-        context.irregularHandler = {}
+        printEvent("setEventHandlers")
     }
 
     @Test
