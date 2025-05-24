@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 import shirates.core.vision.driver.commandextension.*
 import shirates.core.vision.driver.isApp
-import shirates.core.vision.driver.waitForDisplay
+import shirates.core.vision.driver.wait
 import shirates.core.vision.testcode.VisionTest
 
 class AssertingOthers1 : VisionTest() {
@@ -102,7 +102,7 @@ class AssertingOthers1 : VisionTest() {
             case(2) {
                 action {
                     it.launchApp("[Chrome]")
-                        .waitForDisplay("*検索*")
+                        .wait(5)
                 }.expectation {
                     it.packageIs("com.android.chrome")
                 }
