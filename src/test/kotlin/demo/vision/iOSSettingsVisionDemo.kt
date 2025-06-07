@@ -25,7 +25,7 @@ class iOSSettingsVisionDemo : VisionTest() {
             }
             case(2) {
                 expectation {
-                    it.existWithScrollDown("次回起動時にローカルデータを")
+                    it.existWithScrollDown("次回起動時にローカルデータを*")
                 }
             }
 
