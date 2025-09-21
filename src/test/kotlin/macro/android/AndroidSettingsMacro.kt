@@ -123,8 +123,7 @@ object AndroidSettingsMacro : VisionTest() {
         }
 
         androidSettingsTopScreen()
-        it.flickAndGoDownTurbo()
-            .tapWithScrollDown("システム")
+        it.tapWithScrollDown("システム")
             .screenIs("[システム画面]")
     }
 

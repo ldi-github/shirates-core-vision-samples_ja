@@ -17,10 +17,10 @@ class RelativeItem1 : VisionTest() {
                 condition {
                     it.macro("[Android設定トップ画面]")
                 }.action {
-                    v1 = findImage("[接続設定アイコン]")
+                    v1 = findImage("[通知アイコン]")
                 }.expectation {
-                    v1.belowItem().imageIs("[アプリアイコン]")
-                    v1.aboveItem().imageIs("[ネットワークとインターネットアイコン]")
+                    v1.belowItem(removeHorizontalLine = true).imageIs("[音とバイブレーションアイコン]")
+                    v1.aboveItem(removeHorizontalLine = true).imageIs("[アプリアイコン]")
                 }
             }
         }

@@ -17,7 +17,7 @@ class Macro1 : VisionTest() {
                 action {
                     it.macro("[システム画面]")
                 }.expectation {
-                    it.exist("言語")
+                    it.exist("言語と地域")
                 }
             }
         }

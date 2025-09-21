@@ -20,8 +20,8 @@ class Tap1 : VisionTest() {
             }
             case(2) {
                 action {
-                    it.tapWithScrollDown("ディスプレイ")
-                        .tapWithScrollDown("カラー")
+                    it.tapWithScrollDown("ユーザー補助")
+                        .tapWithScrollDown("タイミングの調節")
                     it.pressBack()
                         .pressBack()
                 }
@@ -60,7 +60,7 @@ class Tap1 : VisionTest() {
                     it.pressBack()
                 }.action {
                     withScrollDown {
-                        it.tapItemUnder("サービスと設定")
+                        it.tapItemUnder("充電が完了しました")
                     }
                 }.expectation {
                     it.screenIs("[システム画面]")

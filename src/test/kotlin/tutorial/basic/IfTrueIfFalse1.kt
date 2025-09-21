@@ -24,7 +24,7 @@ class IfTrueIfFalse1 : VisionTest() {
                     isEmulator
                         .ifTrue {
                             it.caption("on emulator")
-                                .tapWithScrollDown("エミュレートされた")
+                                .tapWithScrollDown("*エミュレートされた*")
                         }
                         .ifElse {
                             it.caption("on real device")
@@ -34,7 +34,7 @@ class IfTrueIfFalse1 : VisionTest() {
                     isEmulator
                         .ifTrue {
                             it.caption("on emulator")
-                                .exist("*エミュレートされたデバイスについて*")
+                                .exist("*エミュレートされた*")
                         }
                         .ifElse {
                             it.caption("on real device")
@@ -56,7 +56,7 @@ class IfTrueIfFalse1 : VisionTest() {
                 }.action {
                     isEmulator
                         .ifTrue("on emulator") {
-                            it.tapWithScrollDown("エミュレートされた")
+                            it.tapWithScrollDown("*エミュレートされた*")
                         }
                         .ifElse("on real device") {
                             it.tapWithScrollDown("デバイス情報")
@@ -64,7 +64,7 @@ class IfTrueIfFalse1 : VisionTest() {
                 }.expectation {
                     isEmulator
                         .ifTrue("on emulator") {
-                            it.exist("*エミュレートされたデバイスについて*")
+                            it.exist("*エミュレートされた*")
                         }
                         .ifElse("on real device") {
                             it.exist("デバイス情報")

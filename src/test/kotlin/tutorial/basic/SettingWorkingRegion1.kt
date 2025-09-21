@@ -20,7 +20,7 @@ class SettingWorkingRegion1 : VisionTest() {
                 }.expectation {
                     onTopRegion(topRate = 0.35) {
                         it.exist("設定を検索")
-                        it.dontExist("ストレージ")
+                        it.dontExist("モード")
                     }
                 }
             }
@@ -28,7 +28,7 @@ class SettingWorkingRegion1 : VisionTest() {
                 expectation {
                     onBottomRegion {
                         it.dontExist("設定を検索")
-                        it.exist("ストレージ")
+                        it.exist("ディスプレイとタップ")
                     }
                 }
             }
@@ -54,7 +54,7 @@ class SettingWorkingRegion1 : VisionTest() {
                 expectation {
                     onUpperHalfRegion {
                         it.exist("設定を検索")
-                        it.dontExist("ストレージ")
+                        it.dontExist("モード")
                     }
                 }
             }
@@ -62,7 +62,7 @@ class SettingWorkingRegion1 : VisionTest() {
                 expectation {
                     onLowerHalfRegion {
                         it.dontExist("設定を検索")
-                        it.exist("ストレージ")
+                        it.exist("モード")
                     }
                 }
             }
@@ -110,7 +110,7 @@ class SettingWorkingRegion1 : VisionTest() {
                 action {
                     val sw = StopWatch("onBottomRegion")
                     onBottomRegion {
-                        it.findImage("[音とバイブレーションアイコン]")
+                        it.findImage("[ディスプレイとタップアイコン]")
                     }
                     s3 = "onBottomRegion:    ${sw.elapsedSeconds} sec"
                 }

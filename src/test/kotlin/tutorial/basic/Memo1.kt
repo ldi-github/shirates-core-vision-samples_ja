@@ -18,14 +18,15 @@ class Memo1 : VisionTest() {
             case(1) {
                 condition {
                     it.macro("[Android設定トップ画面]")
-                        .tap("ストレージ")
+                        .tapWithScrollDown("ストレージ")
                         .waitForDisplay("GB")
+                        .flickAndGoDownTurbo()
                 }.action {
-                    writeMemo("システム", it.detect("システム").rightText().text)
                     writeMemo("アプリ", it.detect("アプリ").rightText().text)
+                    writeMemo("一時システムファイル", it.detect("一時システムファイル").rightText().text)
                 }.expectation {
-                    readMemo("システム").printInfo()
                     readMemo("アプリ").printInfo()
+                    readMemo("一時システムファイル").printInfo()
                 }
             }
         }

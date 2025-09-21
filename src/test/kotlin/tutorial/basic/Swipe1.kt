@@ -17,7 +17,7 @@ class Swipe1 : VisionTest() {
                 condition {
                     it.macro("[Android設定トップ画面]")
                 }.action {
-                    it.detect("バッテリー")
+                    it.detect("モード")
                         .swipeTo("ネットワークとインターネット")
                 }.expectation {
                 }
@@ -26,7 +26,7 @@ class Swipe1 : VisionTest() {
                 condition {
                     it.macro("[Android設定トップ画面]")
                 }.action {
-                    it.detect("バッテリー")
+                    it.detect("モード")
                         .swipeToAdjust("ネットワークとインターネット")
                 }.expectation {
                 }
@@ -43,14 +43,14 @@ class Swipe1 : VisionTest() {
                 condition {
                     it.macro("[Android設定トップ画面]")
                         .exist("通知")
-                        .exist("バッテリー")
+                        .exist("ディスプレイとタップ")
                 }.action {
-                    it.detect("バッテリー")
+                    it.detect("ディスプレイとタップ")
                         .swipeToCenterOfScreen()
                         .swipeToTopOfScreen(durationSeconds = 5.0)
                 }.expectation {
                     it.dontExist("通知")
-                        .exist("音とバイブレーション")
+                        .exist("ストレージ")
                 }
             }
             case(2) {

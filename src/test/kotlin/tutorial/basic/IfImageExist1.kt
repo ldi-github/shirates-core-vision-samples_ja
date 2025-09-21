@@ -42,7 +42,7 @@ class IfImageExist1 : VisionTest() {
                         OK("ifElse called")
                     }
 
-                    ifImageExistNot("[システムアイコン]") {
+                    ifImageExistNot("[位置情報アイコン]") {
                         NG()
                     }.ifElse {
                         OK("ifElse called")

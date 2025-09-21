@@ -19,8 +19,7 @@ class SilentAndProcedure1 : VisionTest() {
                 }.action {
                     describe("<システム>をタップする")
                     silent {
-                        it.scrollToBottom()
-                            .tap("システム")
+                        it.tapWithScrollDown("システム")
                     }
                 }.expectation {
                     it.screenIs("[システム画面]")
@@ -39,8 +38,7 @@ class SilentAndProcedure1 : VisionTest() {
                     macro("[Android設定トップ画面]")
                 }.action {
                     procedure("<System>をタップする") {
-                        it.scrollToBottom()
-                            .tap("システム")
+                        it.tapWithScrollDown("システム")
                     }
                 }.expectation {
                     it.screenIs("[システム画面]")

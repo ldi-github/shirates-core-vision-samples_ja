@@ -25,10 +25,10 @@ class PlatformProperties1 : VisionTest() {
                         .thisIs("android")
 
                     platformVersion
-                        .thisIs("14")
+                        .thisIs("16")
 
                     platformMajorVersion
-                        .thisIs(14)
+                        .thisIs(16)
 
                     isAndroid
                         .thisIsTrue()

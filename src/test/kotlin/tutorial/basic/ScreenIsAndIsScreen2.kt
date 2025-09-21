@@ -19,7 +19,6 @@ class ScreenIsAndIsScreen2 : VisionTest() {
                     it.macro("[Android設定トップ画面]")
                 }.expectation {
                     it.screenIs("[Android設定トップ画面]") {   // OK
-                        exist("設定")         // OK（ログは出力されない）
                         exist("設定を検索")    // OK（ログは出力されない）
                     }
                 }

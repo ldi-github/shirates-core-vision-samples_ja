@@ -15,14 +15,14 @@ class SetLanguageOnAndroid1 : VisionTest() {
                 action {
                     LanguageHelper.setLanguageAndLocale(language = "ja", locale = "JP")
                 }.expectation {
-                    it.exist("設定", waitSeconds = 15.0)
+                    it.exist("設定を検索", waitSeconds = 15.0)
                 }
             }
             case(2) {
                 action {
                     LanguageHelper.setLanguageAndLocale(language = "en", locale = "US")
                 }.expectation {
-                    it.exist("Settings", waitSeconds = 15.0)
+                    it.exist("Search Settings", waitSeconds = 15.0)
                 }
             }
         }
