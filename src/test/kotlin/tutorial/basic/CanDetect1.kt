@@ -16,8 +16,8 @@ class CanDetect1 : VisionTest() {
         scenario {
             case(1) {
                 expectation {
-                    it.canDetect("設定")
-                        .thisIsTrue("<設定>が見つかりました")
+                    it.canDetect("Google")
+                        .thisIsTrue("<Google>が見つかりました")
                 }
             }
             case(2) {
@@ -28,23 +28,23 @@ class CanDetect1 : VisionTest() {
             }
             case(3) {
                 expectation {
-                    it.canDetectWithScrollUp("設定")
-                        .thisIsTrue("<設定>が見つかりました（上方向スクロールあり）")
+                    it.canDetectWithScrollUp("Google")
+                        .thisIsTrue("<Google>が見つかりました（上方向スクロールあり）")
                 }
             }
             case(4) {
                 expectation {
                     withScrollDown {
-                        it.canDetectAll("設定", "システム")
-                            .thisIsTrue("<設定>が見つかりました（下方向スクロールあり）")
+                        it.canDetectAll("Google", "システム")
+                            .thisIsTrue("<Google>と<システム>が見つかりました（下方向スクロールあり）")
                     }
                 }
             }
             case(5) {
                 expectation {
                     withScrollUp {
-                        it.canDetectAll("システム", "設定")
-                            .thisIsTrue("<設定>が見つかりました（上方向スクロールあり）")
+                        it.canDetectAll("システム", "Google")
+                            .thisIsTrue("<システム>と<Google>が見つかりました（上方向スクロールあり）")
                     }
                 }
             }

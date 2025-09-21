@@ -19,8 +19,8 @@ class RelativeItem1 : VisionTest() {
                 }.action {
                     v1 = findImage("[通知アイコン]")
                 }.expectation {
-                    v1.belowItem(removeHorizontalLine = true).imageIs("[音とバイブレーションアイコン]")
-                    v1.aboveItem(removeHorizontalLine = true).imageIs("[アプリアイコン]")
+                    v1.belowItem().imageIs("[音とバイブレーションアイコン]")
+                    v1.aboveItem().imageIs("[アプリアイコン]")
                 }
             }
         }

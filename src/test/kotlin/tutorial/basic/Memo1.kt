@@ -23,10 +23,8 @@ class Memo1 : VisionTest() {
                         .flickAndGoDownTurbo()
                 }.action {
                     writeMemo("アプリ", it.detect("アプリ").rightText().text)
-                    writeMemo("一時システムファイル", it.detect("一時システムファイル").rightText().text)
                 }.expectation {
                     readMemo("アプリ").printInfo()
-                    readMemo("一時システムファイル").printInfo()
                 }
             }
         }
