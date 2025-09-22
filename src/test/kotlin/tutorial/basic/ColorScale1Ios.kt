@@ -23,9 +23,9 @@ class ColorScale1Ios : VisionTest() {
                 condition {
                     it.macro("[iOS設定トップ画面]")
                 }.action {
-                    v1 = detect("検索").leftItem()
+                    v1 = detect("一般").leftItem()
                 }.expectation {
-                    it.imageIs("[検索アイコン]")  // NG (on iOS 26 Liquid Glass), OK (on iOS 18 or older)
+                    it.imageIs("[一般アイコン]")
                 }
             }
         }
@@ -44,9 +44,9 @@ class ColorScale1Ios : VisionTest() {
                 condition {
                     it.macro("[iOS設定トップ画面]")
                 }.action {
-                    v1 = detect("検索").leftItem()
+                    v1 = detect("一般").leftItem()
                 }.expectation {
-                    it.imageIs("[検索アイコン]")  // OK
+                    it.imageIs("[一般アイコン]")
                 }
             }
         }
