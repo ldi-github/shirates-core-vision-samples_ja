@@ -42,7 +42,7 @@ class IfCanDetect1 : VisionTest() {
                         OK("ifElse called")
                     }
 
-                    ifCanDetectNot("システム") {
+                    ifCanDetectNot("ユーザー補助") {
                         NG()
                     }.ifElse {
                         OK("ifElse called")
